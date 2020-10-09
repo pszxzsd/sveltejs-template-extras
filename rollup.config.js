@@ -40,10 +40,6 @@ export default {
 		file: 'public/build/bundle.js'
 	},
 	plugins: [
-		// teach rollup how to handle typescript imports
-		typescript({
-			sourceMap: !production
-		}),
 		svelte({
 			// enable run-time checks when not in production
 			dev: !production,
